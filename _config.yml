@@ -1,0 +1,25 @@
+# standard jekyll stuff
+permalink: /:year/:month/:title.html
+markdown: rdiscount
+exclude: Rakefile
+
+# configuration required for some pages
+domain: stevector.com
+title: stevector.com
+author: stevector
+email: steve@stevepersch.com
+
+# configuration third-party integration.
+
+github:
+  username: stevector
+
+twitter:
+  username: stevector
+
+# disqus:
+#   id: 
+
+# google_analytics:
+#  account: 
+
