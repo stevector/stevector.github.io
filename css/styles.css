@@ -542,3 +542,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* line 8, ../_sass/styles.scss */
+#page {
+  border: #000 5px solid;
+  padding: 10px;
+}
