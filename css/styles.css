@@ -1,12 +1,13 @@
-/* normalize.css v2.0.1 | MIT License | git.io/normalize */
-/* normalize.scss v2.0.1+build.2 | MIT/GPLv2 License | bit.ly/normalize-with-compass */
+@import url(http://fonts.googleapis.com/css?family=Domine|Anaheim|Roboto+Condensed|Special+Elite);
+/* normalize.css v2.1.0 | MIT License | git.io/normalize */
+/* normalize.scss v2.1.0 | MIT/GPLv2 License | bit.ly/normalize-with-compass */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
 /**
  * Correct `block` display not defined in IE 8/9.
  */
-/* line 62, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 63, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 article,
 aside,
 details,
@@ -15,6 +16,7 @@ figure,
 footer,
 header,
 hgroup,
+main,
 nav,
 section,
 summary {
@@ -24,7 +26,7 @@ summary {
 /**
  * Correct `inline-block` display not defined in IE 8/9.
  */
-/* line 72, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 73, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 audio,
 canvas,
 video {
@@ -37,7 +39,7 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-/* line 85, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 86, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -47,7 +49,7 @@ audio:not([controls]) {
  * Address styling not present in IE 7/8/9.
  * Known issue: no IE 6 support.
  */
-/* line 95, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 96, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 [hidden] {
   display: none;
 }
@@ -62,7 +64,7 @@ audio:not([controls]) {
  * 3. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
  *    `em` units.
  */
-/* line 111, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 112, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 html {
   font-family: sans-serif;
   /* 1 */
@@ -80,7 +82,7 @@ html {
  * Address `font-family` inconsistency between `textarea` and other form
  * elements in IE 6/7.
  */
-/* line 129, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 130, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 button,
 input,
 select,
@@ -91,7 +93,7 @@ textarea {
 /**
  * Remove default margin.
  */
-/* line 138, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 139, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 body {
   margin: 0;
 }
@@ -102,7 +104,7 @@ body {
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
-/* line 150, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 151, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 a:focus {
   outline: thin dotted;
 }
@@ -110,7 +112,7 @@ a:focus {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 159, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 160, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -122,23 +124,23 @@ a:hover {
 /**
  * Set 1 unit of vertical rhythm on the top and bottom margin.
  */
-/* line 172, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 173, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 p,
 pre {
   margin: 1.5em 0;
 }
 
-/* line 176, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 177, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 blockquote {
   /* Set 1 unit of vertical rhythm on the top and bottom margin. */
   margin: 1.5em 40px;
 }
 
 /**
- * Address variable `h1` font size within `section` and `article` contexts in
- * Firefox 4+, Safari 5, and Chrome.
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 186, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 187, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 h1 {
   /* Set the font-size and line-height while keeping a proper vertical rhythm. */
   font-size: 2em;
@@ -148,7 +150,7 @@ h1 {
   margin-bottom: 0.75em;
 }
 
-/* line 195, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 196, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 h2 {
   font-size: 1.5em;
   line-height: 2em;
@@ -156,7 +158,7 @@ h2 {
   margin-bottom: 1em;
 }
 
-/* line 201, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 202, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 h3 {
   font-size: 1.17em;
   line-height: 1.28205em;
@@ -164,7 +166,7 @@ h3 {
   margin-bottom: 1.28205em;
 }
 
-/* line 207, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 208, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 h4 {
   font-size: 1em;
   line-height: 1.5em;
@@ -172,7 +174,7 @@ h4 {
   margin-bottom: 1.5em;
 }
 
-/* line 213, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 214, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 h5 {
   font-size: 0.83em;
   line-height: 1.80723em;
@@ -180,7 +182,7 @@ h5 {
   margin-bottom: 1.80723em;
 }
 
-/* line 219, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 220, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 h6 {
   font-size: 0.67em;
   line-height: 2.23881em;
@@ -191,7 +193,7 @@ h6 {
 /**
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
  */
-/* line 229, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 230, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -199,7 +201,7 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 238, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 239, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 b,
 strong {
   font-weight: bold;
@@ -208,15 +210,27 @@ strong {
 /**
  * Address styling not present in Safari 5 and Chrome.
  */
-/* line 246, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 247, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 dfn {
   font-style: italic;
 }
 
 /**
+ * Address differences between Firefox and other browsers.
+ * Known issue: no IE 6/7 normalization.
+ */
+/* line 256, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+hr {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
  * Address styling not present in IE 8/9.
  */
-/* line 254, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 265, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -225,7 +239,7 @@ mark {
 /**
  * Correct font family set oddly in Safari 5 and Chrome.
  */
-/* line 266, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 277, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 code,
 kbd,
 pre,
@@ -239,17 +253,15 @@ samp {
 /**
  * Improve readability of pre-formatted text in all browsers.
  */
-/* line 278, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 289, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 pre {
-  white-space: pre;
   white-space: pre-wrap;
-  word-wrap: break-word;
 }
 
 /**
  * Set consistent quote types.
  */
-/* line 288, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 297, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
@@ -257,7 +269,7 @@ q {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-/* line 296, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 305, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 small {
   font-size: 80%;
 }
@@ -265,7 +277,7 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 305, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 314, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -274,12 +286,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 312, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 321, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 316, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 325, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
@@ -290,7 +302,7 @@ sub {
 /**
  * Set 1 unit of vertical rhythm and a consistent indentation.
  */
-/* line 331, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 340, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 dl,
 menu,
 ol,
@@ -299,12 +311,12 @@ ul {
   padding: 0 0 0 40px;
 }
 
-/* line 336, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 345, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 dl {
   padding: 0;
 }
 
-/* line 340, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 349, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 dd {
   margin: 0 0 0 40px;
 }
@@ -312,7 +324,7 @@ dd {
 /**
  * Correct list images handled incorrectly in IE 7.
  */
-/* line 350, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 359, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 nav ul,
 nav ol {
   list-style: none;
@@ -325,7 +337,7 @@ nav ol {
 /**
  * Remove border when inside `a` element in IE 8/9.
  */
-/* line 364, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 373, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 img {
   border: 0;
   /* Improve image quality when scaled in IE 7. */
@@ -335,7 +347,7 @@ img {
 /**
  * Correct overflow displayed oddly in IE 9.
  */
-/* line 376, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 385, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -346,7 +358,7 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 8/9 and Safari 5.
  */
-/* line 388, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 397, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 figure {
   margin: 0;
 }
@@ -357,7 +369,7 @@ figure {
 /**
  * Correct margin displayed oddly in IE 6/7.
  */
-/* line 401, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 410, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 form {
   margin: 0;
 }
@@ -365,7 +377,7 @@ form {
 /**
  * Define consistent border, margin, and padding.
  */
-/* line 410, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 419, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 fieldset {
   border-color: #c0c0c0;
   margin: 0 2px;
@@ -389,7 +401,7 @@ fieldset {
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  * 3. Correct alignment displayed oddly in IE 6/7.
  */
-/* line 426, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 435, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -405,7 +417,7 @@ legend {
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  * 4. Improve appearance and consistency with IE 6/7.
  */
-/* line 444, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 453, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 button,
 input,
 select,
@@ -426,10 +438,22 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 460, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 469, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 button,
 input {
   line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 481, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+button,
+select {
+  text-transform: none;
 }
 
 /**
@@ -441,7 +465,7 @@ input {
  * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
  *    Known issue: inner spacing remains in IE 6.
  */
-/* line 477, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 498, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -457,7 +481,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 490, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 511, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -469,7 +493,7 @@ html input[disabled] {
  * 3. Remove excess padding in IE 7.
  *    Known issue: excess padding remains in IE 6.
  */
-/* line 502, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 523, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   -webkit-box-sizing: border-box;
@@ -489,7 +513,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 517, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 538, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -503,7 +527,7 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 528, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 549, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -512,7 +536,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 537, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 558, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -523,7 +547,7 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
  */
-/* line 547, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 568, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -537,14 +561,78 @@ textarea {
 /**
  * Remove most spacing between table cells.
  */
-/* line 560, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
+/* line 581, ../_sass/normalize.css-with-sass-or-compass/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 8, ../_sass/styles.scss */
+/*
+beruit sunrise
+https://kuler.adobe.com/#themeID/2317561
+
+trisha exterior
+https://kuler.adobe.com/#themeID/2318768
+
+sparkled hue
+https://kuler.adobe.com/#themeID/2318768
+
+Copy of salmon on ice
+https://kuler.adobe.com/#themeID/2316682
+
+*/
+/* line 31, ../_sass/_colors.scss */
+body {
+  background-color: #fff6e5;
+}
+
+/* line 35, ../_sass/_colors.scss */
 #page {
-  border: #000 5px solid;
+  border: #ff7f66 5px solid;
   padding: 10px;
+}
+
+/* line 40, ../_sass/_colors.scss */
+p {
+  color: #3e454c;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* line 45, ../_sass/_colors.scss */
+a {
+  color: #2185c5;
+}
+
+/* line 51, ../_sass/_colors.scss */
+a:focus,
+a:active,
+a:hover {
+  color: #7ecefd;
+}
+
+/* line 61, ../_sass/_colors.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Anaheim', sans-serif;
+}
+
+/*
+beruit sunrise
+https://kuler.adobe.com/#themeID/2317561
+
+trisha exterior
+https://kuler.adobe.com/#themeID/2318768
+
+sparkled hue
+https://kuler.adobe.com/#themeID/2318768
+
+*/
+/* line 24, ../_sass/styles.scss */
+#page {
+  max-width: 1200px;
+  margin: 10px 40px;
 }
