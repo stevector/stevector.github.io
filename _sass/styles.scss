@@ -1,11 +1,27 @@
 @import "normalize.css-with-sass-or-compass/_normalize.scss";
+@import "colors.scss";
+
+
+
+/*
+beruit sunrise
+https://kuler.adobe.com/#themeID/2317561
+
+trisha exterior
+https://kuler.adobe.com/#themeID/2318768
+
+sparkled hue
+https://kuler.adobe.com/#themeID/2318768
+
+*/
 
 
 body {
 
 }
 
+
 #page {
-  border: #000 5px solid;
-  padding: 10px;
+  max-width: 1200px;
+  margin: 10px 40px;
 }
