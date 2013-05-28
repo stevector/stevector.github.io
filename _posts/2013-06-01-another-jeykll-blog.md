@@ -1,11 +1,9 @@
 --- 
 layout: post
-title: Plugin Haikus: My Drupalcon Portland 
+title: Another Jekyll blog 
 ---
 
-http://stevector.github.io/plugin-haikus/
+Jekyll caught my attention when I saw it used by Drupal developers for their own blogs like those of -eaton's-, -heyrocker's-, and -Farina's?-. So I used it (the "Hekyll" version) to create a presentation called Workbench for Wookies. Then eye-catching government project like [ehawaii.gov](http://portal.ehawaii.gov/page/developers/) and [healthcare.gov](http://developmentseed.org/blog/new-healthcare-gov-is-open-and-cms-free/) made it clear that I need to jump on the band wagon.
 
-http://portland2013.drupal.org/node/1458
 
-http://www.youtube.com/watch?v=o6oFYmwWNtY&feature=youtu.be
 
