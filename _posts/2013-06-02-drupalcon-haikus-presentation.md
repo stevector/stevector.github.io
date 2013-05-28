@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: Plugin Haikus: My Drupalcon Portland 
+title: Plugin Haikus - My Drupalcon Portland presentation
 ---
 
 http://stevector.github.io/plugin-haikus/
