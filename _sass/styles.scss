@@ -2,26 +2,36 @@
 @import "colors.scss";
 
 
-
-/*
-beruit sunrise
-https://kuler.adobe.com/#themeID/2317561
-
-trisha exterior
-https://kuler.adobe.com/#themeID/2318768
-
-sparkled hue
-https://kuler.adobe.com/#themeID/2318768
-
-*/
-
-
 body {
-
 }
 
 
+footer,
+.page-header {
+  h1, h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  padding: 10px;
+}
+
+.page-header p {
+  margin-top: .5em;
+}
+
+#recent-posts {
+  margin-top: 0;
+}
+
+#page-wrapper {
+  max-width: 800px;
+  margin: 10px auto;
+}
+
 #page {
-  max-width: 1200px;
-  margin: 10px 40px;
+  margin: 0 5px;
+}
+
+#content {
+  margin: 0 20px;
 }
