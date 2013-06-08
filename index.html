@@ -3,28 +3,37 @@ layout: default
 description: Steve Persch's blog
 summary: Steve Persch's blog
 ---
-<header>
-<h1><a href="/">{{ site.title }}</a></h1>
-<p>You're reading the blog of Steve Persch. This is where I write about technology, Drupal, philosophy and other topics. I also happen to do a lot of improv and sketch comedy around Chicago. Find out when by going over to <a href="http://stevepersch.com">stevepersch.com</a>.
-</p>
+<header class="page-header">
+  <h1><a href="/">{{ site.title }}</a></h1>
+  <p>You're reading the blog of Steve Persch. This is where I write about technology, Drupal, philosophy and other topics. I also happen to do a lot of improv and sketch comedy around Chicago. Find out when by going over to <a href="http://stevepersch.com">stevepersch.com</a>.
+  </p>
 </header>
 
-{% for post in site.posts limit:1 %}
-<article>
-  {% if post.title %}
-    <h2>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </h2>
-  {% endif %}
-  {{ post.content }}
-</article>
-{% endfor %}
+<div id="content">
+  {% for post in site.posts limit:1 %}
+  <article>
+    {% if post.title %}
+      <h2>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </h2>
+    {% endif %}
+    {{ post.content }}
+  </article>
+  {% endfor %}
+</div>
 
-<ul id="recent-posts">
-{% for post in site.posts offset:0 limit:20 %}
-  <li>
-    <span>{{ post.date | date_to_string }} - </span>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-  </li>
-{% endfor %}
-</ul>
+<footer>
+  <header>
+  <h2>
+  Recent Posts
+  </h2>
+  </header>
+  <ul id="recent-posts">
+  {% for post in site.posts offset:0 limit:20 %}
+    <li>
+      <span>{{ post.date | date_to_string }} - </span>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+</footer>
