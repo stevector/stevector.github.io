@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Domine|Anaheim|Roboto+Condensed|Special+Elite);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,600,400italic,600italic|Titillium+Web:400,200,600italic,600,400italic);
 /* normalize.css v2.1.0 | MIT License | git.io/normalize */
 /* normalize.scss v2.1.0 | MIT/GPLv2 License | bit.ly/normalize-with-compass */
 /* ==========================================================================
@@ -581,58 +581,105 @@ Copy of salmon on ice
 https://kuler.adobe.com/#themeID/2316682
 
 */
-/* line 31, ../_sass/_colors.scss */
+/* line 28, ../_sass/_colors.scss */
 body {
-  background-color: #fff6e5;
+  background-color: #269;
+  background-image: linear-gradient(#ffffff 2px, transparent 2px), linear-gradient(90deg, #ffffff 2px, transparent 2px), linear-gradient(rgba(255, 255, 255, 0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.3) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
 }
 
-/* line 35, ../_sass/_colors.scss */
+/* line 39, ../_sass/_colors.scss */
 #page {
-  border: #ff7f66 5px solid;
-  padding: 10px;
-}
-
-/* line 40, ../_sass/_colors.scss */
-p {
-  color: #3e454c;
-  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #f9f9f9;
+  border: #9b371b 5px solid;
 }
 
 /* line 45, ../_sass/_colors.scss */
-a {
-  color: #2185c5;
+footer,
+.page-header {
+  background-color: #000;
+}
+/* line 47, ../_sass/_colors.scss */
+footer *, footer p,
+.page-header *,
+.page-header p {
+  color: #f9f9f9;
+}
+/* line 50, ../_sass/_colors.scss */
+footer a,
+.page-header a {
+  color: #3984f6;
 }
 
-/* line 51, ../_sass/_colors.scss */
+/* line 55, ../_sass/_colors.scss */
+p {
+  color: #3e454c;
+}
+
+/* line 59, ../_sass/_colors.scss */
+a {
+  color: #2175f5;
+}
+
+/* line 65, ../_sass/_colors.scss */
 a:focus,
 a:active,
 a:hover {
-  color: #7ecefd;
+  color: #c00;
 }
 
-/* line 61, ../_sass/_colors.scss */
+/* line 69, ../_sass/_colors.scss */
+body {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: normal;
+}
+
+/* line 79, ../_sass/_colors.scss */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Anaheim', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
-/*
-beruit sunrise
-https://kuler.adobe.com/#themeID/2317561
+/* line 10, ../_sass/styles.scss */
+footer,
+.page-header {
+  padding: 10px;
+}
+/* line 11, ../_sass/styles.scss */
+footer h1, footer h2,
+.page-header h1,
+.page-header h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
-trisha exterior
-https://kuler.adobe.com/#themeID/2318768
+/* line 18, ../_sass/styles.scss */
+.page-header p {
+  margin-top: .5em;
+}
 
-sparkled hue
-https://kuler.adobe.com/#themeID/2318768
+/* line 22, ../_sass/styles.scss */
+#recent-posts {
+  margin-top: 0;
+}
 
-*/
-/* line 24, ../_sass/styles.scss */
+/* line 26, ../_sass/styles.scss */
+#page-wrapper {
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+/* line 31, ../_sass/styles.scss */
 #page {
-  max-width: 1200px;
-  margin: 10px 40px;
+  margin: 0 5px;
+}
+
+/* line 35, ../_sass/styles.scss */
+#content {
+  margin: 0 20px;
 }
