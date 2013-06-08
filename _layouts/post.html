@@ -1,13 +1,14 @@
 ---
 layout: default
 ---
-<header>
-<h1><a href="/">{{ site.title }}</a></h1>
+<header class="page-header">
+  <h1><a href="/">{{ site.title }}</a></h1>
 </header>
 
-<article>
-{% if page.title %}<h2>{{ page.title }}</h2>{% endif %}
-{{ content }}
-
-{% if site.disqus %}{% include disqus_thread.html %}{% endif %}
-</article>
+<div id="content">
+  <article>
+  {% if page.title %}<h2>{{ page.title }}</h2>{% endif %}
+  {{ content }}
+  {% if site.disqus %}{% include disqus_thread.html %}{% endif %}
+  </article>
+</div>
