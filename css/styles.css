@@ -636,13 +636,25 @@ a:hover {
   color: #c00;
 }
 
-/* line 73, ../_sass/_colors.scss */
+/* line 4, ../_sass/styles.scss */
+.page-main-image-wrapper {
+  margin: 10px auto;
+  max-width: 500px;
+}
+
+/* line 9, ../_sass/styles.scss */
+img.page-main-image {
+  width: 100%;
+  border: 3px solid #3E454C;
+}
+
+/* line 14, ../_sass/styles.scss */
 body {
   font-family: 'Titillium Web', sans-serif;
   font-weight: normal;
 }
 
-/* line 83, ../_sass/_colors.scss */
+/* line 24, ../_sass/styles.scss */
 h1,
 h2,
 h3,
@@ -652,12 +664,12 @@ h6 {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-/* line 10, ../_sass/styles.scss */
+/* line 29, ../_sass/styles.scss */
 footer,
 .page-header {
   padding: 10px;
 }
-/* line 11, ../_sass/styles.scss */
+/* line 30, ../_sass/styles.scss */
 footer h1, footer h2,
 .page-header h1,
 .page-header h2 {
@@ -665,28 +677,28 @@ footer h1, footer h2,
   margin-bottom: 0;
 }
 
-/* line 18, ../_sass/styles.scss */
+/* line 37, ../_sass/styles.scss */
 .page-header p {
   margin-top: .5em;
 }
 
-/* line 22, ../_sass/styles.scss */
+/* line 41, ../_sass/styles.scss */
 #recent-posts {
   margin-top: 0;
 }
 
-/* line 26, ../_sass/styles.scss */
+/* line 45, ../_sass/styles.scss */
 #page-wrapper {
   max-width: 800px;
   margin: 10px auto;
 }
 
-/* line 31, ../_sass/styles.scss */
+/* line 50, ../_sass/styles.scss */
 #page {
   margin: 0 5px;
 }
 
-/* line 35, ../_sass/styles.scss */
+/* line 54, ../_sass/styles.scss */
 #content {
   margin: 0 20px;
 }
