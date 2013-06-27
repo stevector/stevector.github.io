@@ -69,3 +69,9 @@ a:active,
 a:hover {
   color: #c00;
 }
+
+blockquote {
+  border-left: 10px solid #3E454C;
+  background-color: $check;
+  padding: 5px 30px;
+}
