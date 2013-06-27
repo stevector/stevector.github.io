@@ -24,16 +24,20 @@ $off_white  : #F9f9f9;
 $salmon     : #FF7F66;
 $dark_blue  : #004;
 $orange     : #9b371b;
+$check      : #d7d7d7;
 
 body {
+/*
   background:
-  linear-gradient(135deg, #fff 10%, transparent 0%) -40px 0,
-  linear-gradient(225deg, #fff 10%, transparent 0%) -40px 0,
-  linear-gradient(315deg, #fff 10%, transparent 0%),
-  linear-gradient(45deg, #fff 10%, transparent 0%);
-  background-size: 40px 40px;
-  background-color: $dark_blue;
+  linear-gradient(135deg, $check 16%, transparent 0%) -35px 0,
+  linear-gradient(225deg, $check 16%, transparent 0%) -35px 0,
+  linear-gradient(315deg, $check 16%, transparent 0%),
+  linear-gradient(45deg,  $check 16%, transparent 0%);
+  background-size: 35px 35px;
+  background-color: lighten($dark_blue, 5%);
   background-position: 50% 50%;
+  */
+  background-color: $dark_blue;
 }
 
 #page {
