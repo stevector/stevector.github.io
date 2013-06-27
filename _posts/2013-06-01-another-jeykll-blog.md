@@ -1,9 +1,11 @@
 --- 
 layout: post
-title: Another Jekyll blog 
+title: Another Jekyll blog
+main-image: "all_the_things.jpg"
+image-attributes:
+
 ---
 
-@todo Insert "version control all of the things" image in here.
 
 I'm jumping on the bandwagon. My vague ambitions to start a blog have combined with my desire to built something outside of [Drupal](https://drupal.org) (the technology that has been at the center of my job for six years). So like [The state of Hawaii](http://portal.ehawaii.gov/page/developers/), [The federal government](http://developmentseed.org/blog/new-healthcare-gov-is-open-and-cms-free/) and Drupal developers  [Jeff Eaton](http://angrylittletree.com/), and [Matt Farina](http://engineeredweb.com/blog/why-switched-to-jekyll/) I've turned to Jekyll.
 
