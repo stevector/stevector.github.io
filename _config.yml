@@ -21,7 +21,5 @@ twitter:
 # disqus:
 #   id: 
 
-# @todo, fix before live
-# google_analytics:
-#  account: 
-
+google_analytics:
+  account: UA-42048647-1
