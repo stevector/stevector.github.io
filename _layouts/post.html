@@ -10,7 +10,7 @@ layout: default
   {% if page.title %}<h2>{{ page.title }}</h2>{% endif %}
     {% if page.main-image %}
     <div class="page-main-image-wrapper">
-      <img class="page-main-image" src="/assets/{{ page.main-image }}" {% for attr in page.image-attributes %} {{attr[0]}}="{{attr[1]}}"{% endfor %}    />
+      <img class="page-main-image" src="/assets/main_images/{{ page.main-image }}" {% for attr in page.image-attributes %} {{attr[0]}}="{{attr[1]}}"{% endfor %}    />
     </div>
     {% endif %}
 
