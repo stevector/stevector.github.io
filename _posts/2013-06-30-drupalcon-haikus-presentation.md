@@ -3,7 +3,7 @@ layout: post
 title: Plugin Haikus - Drupalcon Portland presentation
 ---
 
-Last month at Drupalcon Portland I gave [a presentation on CTools plugins](http://portland2013.drupal.org/node/1458) along with [Pedro Cambra](https://twitter.com/pcambra). My half of the presentation focuses on working with existing plugins in [the Panels module](http://drupal.org/project/panels). Panels has one of the steeper learning curves in Drupal. It's complexity presents a challenge when debugging. I breakdown the Panels workflow into it's component plugins and discuss the purpose of the plugin types.
+Last month at Drupalcon Portland I gave [a presentation on CTools plugins](http://portland2013.drupal.org/node/1458) along with [Pedro Cambra](https://twitter.com/pcambra). My half of the presentation focuses on working with existing plugins in [the Panels module](http://drupal.org/project/panels). Panels has one of the steeper learning curves in Drupal. Its complexity presents a challenge when debugging. I breakdown the Panels workflow into its component plugins and discuss the purpose of the plugin types.
 
 And we framed the presentation with haikus.
 
