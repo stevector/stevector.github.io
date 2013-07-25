@@ -1,7 +1,9 @@
 # standard jekyll stuff
 permalink: /:year/:month/:title.html
 markdown: rdiscount
-exclude: Rakefile
+exclude:
+ - Rakefile
+ - config.rb
 
 # configuration required for some pages
 domain: stevector.com
