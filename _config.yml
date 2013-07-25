@@ -4,6 +4,7 @@ markdown: rdiscount
 exclude:
  - Rakefile
  - config.rb
+source: jekyll
 
 # configuration required for some pages
 domain: stevector.com
