@@ -1,4 +1,5 @@
 # standard jekyll stuff
+timezone: America/Chicago
 permalink: /:year/:month/:title.html
 markdown: rdiscount
 exclude:
