@@ -1,5 +1,6 @@
 # standard jekyll stuff
 permalink: /posts/:year/:month/:title.html
+timezone: America/Chicago
 markdown: rdiscount
 exclude:
  - Rakefile
