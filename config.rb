@@ -17,11 +17,11 @@ firesass = false
 
 
 # Location of the theme's resources.
-css_dir         = "css"
-sass_dir        = "_sass"
-extensions_dir  = "sass-extensions"
-images_dir      = "images"
-javascripts_dir = "js"
+css_dir         = "jekyll/css"
+sass_dir        = "jekyll/_sass"
+extensions_dir  = "jekyll/isass-extensions"
+images_dir      = "jekyll/images"
+javascripts_dir = "jekyll/ijs"
 
 
 # Require any additional compass plugins installed on your system.

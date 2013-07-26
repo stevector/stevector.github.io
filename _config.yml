@@ -1,10 +1,11 @@
 # standard jekyll stuff
+permalink: /posts/:year/:month/:title.html
 timezone: America/Chicago
-permalink: /:year/:month/:title.html
 markdown: rdiscount
 exclude:
  - Rakefile
  - config.rb
+source: jekyll
 
 # configuration required for some pages
 domain: stevector.com
