@@ -1,12 +1,14 @@
+---
+published: false
+---
+
 --- 
 layout: post
 title: Fixing typos with Jekyll and Github
 ---
-Github can help rid us of the most annoying part of the web: ~~comments~~, typos. Sure the blogging platforms, geocities, wikis and web ~~2.0~~, 3.0 wonders have marvelously democratized mass communication; they’ve also exploded the volume of un-proofread prose available. You’re reading one of those dashed-off-in-Google-Drive, posted-too-quickly posts right now. And there’s a really good chance I’ll undermine my point about how to fix typos with Github with an unintended typo.
+Github can help rid us of the most annoying part of the web: ~~comments~~, typos. Blogging platforms, geocities, wikis and web ~~2.0~~, 3.0 wonders have marvelously democratized mass communication. In doing so, they’ve also exploded the volume of un-proofread prose available. You’re reading one of those dashed-off-in-Google-Drive, posted-too-quickly posts right now. And there’s a really good chance I’ll undermine my point about how to fix typos with Github with an unintended typo.
 
-First, what’s a Github?  Github is a place for sharing and collaborating on files, particularly the source code of software projects. Its rise over the past few years has greatly helped to accelerate the adoption of open source practices. [The White House](https://github.com/whitehouse), [major media corporations](https://github.com/NBCUOTS), and even [Microsoft](https://github.com/msopentech) have all found value in sharing the kind of code that until very recently was kept closely protected. One of the main reasons to go open source with code is the free labor. By making code open source, the original author can receive changes that fix bugs and add features. And sometimes the fixes are simply for typos and snippets of code that never should have been there in the first place. 
-
-https://github.com/WhiteHouse/fortyfour/commit/9da757c25afe6675787638044c493e0403cd9706
+First, what’s a Github?  Github is a place for sharing and collaborating on files, particularly the source code of software projects. Its rise over the past few years has greatly helped to accelerate the adoption of open source practices. [The White House](https://github.com/whitehouse), [major media corporations](https://github.com/NBCUOTS), and even [Microsoft](https://github.com/msopentech) have all found value in sharing the kind of code that until very recently was kept closely protected. One of the main reasons to go open source with code is the free labor. By making code open source, the original author can receive changes that fix bugs and add features. And sometimes the fixes are simply for typos and [snippets of code that never should have been there in the first place](https://github.com/WhiteHouse/fortyfour/commit/9da757c25afe6675787638044c493e0403cd9706 "Like the time I heard raptor noises coming from the White House base theme.").
 
 A few months ago I saw a colleague tweet a link to a new blog post. It was insightful, reflective and had many good points that I generally agreed with. And that one typo I saw distracted me just a little from those good points. I didn’t want anyone else reading the blog post later to have the same distraction. So [I made a pull request to fix it](https://github.com/eaton/eaton.github.com/pull/2). It was merged the same night.
 
