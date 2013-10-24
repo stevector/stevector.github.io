@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the Sub Bartik theme.
+ *
+ * All of the functions from Bartik's .theme file are still called.
+ */

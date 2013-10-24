@@ -1,0 +1,22 @@
+{#
+/**
+ * @file
+ *   Extend the base node template with overrides for the article content type.
+ */
+ #}
+{# It seems odd to have to declare the full file path relative to the Drupal
+   root. 'node' or node.html.twig seems like it should be sufficient. #}
+{% extends "themes/sub_bartik/templates/node.html.twig" %}
+
+{# Override the header_fields block to put field_image there because this site
+   needs it there. #}
+{% block header_fields %}
+  {{ content.field_image }}
+{% endblock %}
+
+{# Override the content block to hide the field_image subvariable because
+   it is being rendered in header_fields. #}
+{% block content %}
+  {% hide(content.field_image) %}
+  {{ content }}
+{% endblock %}
