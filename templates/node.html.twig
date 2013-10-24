@@ -91,8 +91,7 @@
 
     {# This empty block allows child templates to insert markup into this
        place in the header without re-writing the entire template. #}
-    {% block header_fields %}
-    {% endblock %}
+    {% block header_fields %}{% endblock %}
 
     {% if display_submitted %}
       <div class="meta submitted">
