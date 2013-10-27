@@ -45,7 +45,7 @@ Here's an example `node--article.twig.html` that moves field_image.
 
 [Compare that to the amount of code in the parent template being overridden.](https://github.com/stevector/stevector.github.io/blob/example--twig-extends/templates/node.html.twig)
 
-To make this kind of overriding possible, the parent template needs to declare which sections can be overridden. In this example I've declared two "blocks" (the Drupal community might start calling these pieces "codeblocks" to reduce confusion with Drupal core's Block module) that designates which pieces of the template can replace.
+To make this kind of overriding possible, the parent template needs to declare which sections can be overridden. In this example I've declared two "blocks" (the Drupal community might start calling these pieces "codeblocks" to reduce confusion with Drupal core's Block module) that designates which pieces of the template can be replaced.
 
 Here's one addition to `node.twig.html` in a copy Bartik's version:
 
