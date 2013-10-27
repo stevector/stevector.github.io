@@ -16,7 +16,7 @@ Last weekend when I was working on a personal Drupal project ([nerdologues.com](
 I wanted to print some fields in the header tag of my node template for only one node type.
 In Drupal 7 (and prior versions) this process involves making a a complete copy of the `node.tpl.php` file ([See the drupal.org documentation of this process here](https://drupal.org/node/17565)).
 
-Copying every line of node.tpl.php to node--article.tpl.php only to change a few lines makes the theme of a given drupal site extremely WET ([Write Everything Twice](http://en.wikipedia.org/wiki/Don't_repeat_yourself#DRY_vs_WET_solutions)).
+Copying every line of `node.tpl.php` to `node--article.tpl.php` only to change a few lines makes the theme of a given drupal site extremely WET ([Write Everything Twice](http://en.wikipedia.org/wiki/Don't_repeat_yourself#DRY_vs_WET_solutions)).
 What if instead of duplicating the entire node template file to a node-type specific name, I could make that node-type specific file contain only the overrides?
 
 That's what Twig 'extends' concept does!
@@ -48,7 +48,7 @@ Compare that to the amount of code in the parent template being overridden. LINK
 
 To make this kind of overriding possible, the parent template needs to declare which sections can be overridden. In this example I've declared two "blocks" (in Twig-speak, the Drupal community might start calling these "codeblocks" to reduce confusion with Drupal core's Block module) that designates which pieces of the template can replace.
 
-Heres one addition to node.twig.html in a copy Bartik's version:
+Heres one addition to `node.twig.html` in a copy Bartik's version:
 
 <pre>
     {# This empty block allows child templates to insert markup into this
@@ -57,7 +57,7 @@ Heres one addition to node.twig.html in a copy Bartik's version:
     {% endblock %}
 </pre>
 
-Addition two in node.twig.html
+Addition two in `node.twig.html`
 <pre>
     {# By wrapping the content variables in a block, this template allows child
        templates to insert markup into this spot without re-writing the entire
@@ -70,8 +70,8 @@ Addition two in node.twig.html
 ### WHERE does this code go
 
 You can see the the complete example code which is a sub-theme of Bartik here [in an alternate branch of the github repo of this blog you're reading](https://github.com/stevector/stevector.github.io/tree/twig-extends-example).
-To test it, git clone that branch into /themes of a Drupal 8 site and enable  Notice that again that the "parent" node.twig.html is in this sub-theme.
-By having a node.twig.html in the subtheme, Drupal (and Twig) completely ignore the node.twig.html in Bartik and node module.
+To test it, git clone that branch into /themes of a Drupal 8 site and enable  Notice that again that the "parent" `node.twig.html` is in this sub-theme.
+By having a `node.twig.html` in the sub-theme, Drupal (and Twig) completely ignore the `node.twig.html` in Bartik and node module.
 That kind of overriding where a template file in the theme completely supersedes Core is the same as previous versions of Drupal.
 
 ### WHO should write these "blocks"
