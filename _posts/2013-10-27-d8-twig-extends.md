@@ -25,7 +25,7 @@ That's what Twig "extends" concept does!
 
 Here's an example `node--article.twig.html` that moves field_image.
 
-```
+<pre>
 {% raw %}{% extends "themes/sub_bartik/templates/node.html.twig" %}
 
 {# Override the header_fields block to put field_image there because this site
@@ -41,7 +41,7 @@ Here's an example `node--article.twig.html` that moves field_image.
   {{ content }}
 {% endblock %}
 {% endraw %}
-```
+</pre>
 
 [Compare that to the amount of code in the parent template being overridden.](https://github.com/stevector/stevector.github.io/blob/example--twig-extends/templates/node.html.twig)
 
