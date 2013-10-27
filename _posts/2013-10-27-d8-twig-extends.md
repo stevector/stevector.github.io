@@ -49,24 +49,24 @@ To make this kind of overriding possible, the parent template needs to declare w
 
 Heres one addition to `node.twig.html` in a copy Bartik's version:
 
-```
+<pre>
 {% raw %}{# This empty block allows child templates to insert markup into this
    place in the header without re-writing the entire template. #}
 {% block header_fields %}
 {% endblock %}
 {% endraw %}
-```
+</pre>
 
 Addition two in `node.twig.html` is:
 
-```
+<pre>
 {% raw %}{# By wrapping the content variables in a block, this template allows child
    templates to insert markup into this spot without re-writing the entire
    template. #}
 {% block content %}
   {{ content }}
 {% endblock %}{% endraw %}
-```
+</pre>
 
 ### WHERE does this code go?
 
