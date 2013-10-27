@@ -20,9 +20,8 @@ github:
 twitter:
   username: stevector
 
-# @todo, fix before live
-# disqus:
-#   id: 
+disqus:
+  id: stevector
 
 google_analytics:
   account: UA-42048647-1
