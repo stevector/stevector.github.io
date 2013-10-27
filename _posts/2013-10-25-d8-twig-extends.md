@@ -8,7 +8,7 @@ title: Make your Drupal 8 theme easier to maintain with this one weird trick (Tw
 Drupal 8 has a new templating system called [Twig](http://twig.sensiolabs.org/) that comes from the [Symfony](http://symfony.com/) world.
 I recommend learning about Twig and Drupal 8's use of it by watching a video of one of the many recent conference presentations on the topic like [this one from Drupalcon Portland](https://portland2013.drupal.org/session/using-twig-new-template-engine-drupal-8).
 Twig contains within it a different model for overriding templates that can be used in combination with Drupal's traditional naming-based template overrides.
-[Read Twig's own documentation of 'extends' here](http://twig.sensiolabs.org/doc/tags/extends.html) to see how it allows child templates to be much simpler than their parents. Or just keep reading until the 'HOW' section of this post.
+[Read Twig's own documentation of "extends" here](http://twig.sensiolabs.org/doc/tags/extends.html) to see how it allows child templates to be much simpler than their parents. Or just keep reading until the 'HOW' section of this post.
 
 ### WHY is it helpful?
 
@@ -19,7 +19,7 @@ In Drupal 7 (and prior versions) this process involves making a a complete copy 
 Copying every line of `node.tpl.php` to `node--article.tpl.php` only to change a few lines makes the theme of a given Drupal site extremely WET ([Write Everything Twice](http://en.wikipedia.org/wiki/Don't_repeat_yourself#DRY_vs_WET_solutions)).
 What if instead of duplicating the entire node template file to a node-type specific name, I could make that node-type specific file contain only the overrides?
 
-That's what Twig 'extends' concept does!
+That's what Twig "extends" concept does!
 
 ### HOW is it used?
 
@@ -74,7 +74,7 @@ That kind of overriding, where a template file in the theme completely supersede
 
 ### WHO should write these "blocks"?
 
-This example is illustrates how 'extends' can be used a site owner in a **site-specific theme**.
+This example is illustrates how "extends" can be used a site owner in a **site-specific theme**.
 I have shown this code around at [BADCamp](http://2013.badcamp.net/) this weekend and the reaction from [Carl Wiedemann](https://twitter.com/c4rl) and other Twig-interested-developers has mainly been something like "Drupal Core shouldn't put these blocks in templates yet (or maybe ever) because we don't have enough experience with them."
 I agree.
 Drupal has a pattern of proving concepts in the contrib space and then moving those concepts into core.
@@ -82,7 +82,7 @@ And even before making a contrib base theme using Twig blocks, someone has to us
 
 ### WHEN will developers start using "blocks"?
 
-Heavy use of the 'extends' concept in Twig will start when developers start building Drupal 8 sites and adding site-specific themes.
+Heavy use of the "extends" concept in Twig will start when developers start building Drupal 8 sites and adding site-specific themes.
 Scott Reeves pointed out to me that Jen Lampton's experimental Twig base theme for Drupal 8 [used this concept already](https://github.com/jenlampton/twiggy/blob/master/templates/node.html.twig#L98).
 
 ### WHAT is next?
