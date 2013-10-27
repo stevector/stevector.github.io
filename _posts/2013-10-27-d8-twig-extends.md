@@ -12,9 +12,9 @@ Twig contains within it a different model for overriding templates that can be u
 
 ### WHY is it helpful?
 
-Last weekend when I was working on a personal Drupal project ([nerdologues.com](http://nerdologues.com)) and ran into a common theme development pain point.
+Last weekend I was working on a personal Drupal project ([nerdologues.com](http://nerdologues.com)) and ran into a common theme development pain point.
 I wanted to print some fields separate from the rest of the `$content` variable for only one node type.
-In Drupal 7 (and prior versions) this process involves making a a complete copy of the `node.tpl.php` file ([See the drupal.org documentation of this process here](https://drupal.org/node/17565)).
+In Drupal 7 (and prior versions) this process involves making a complete copy of the `node.tpl.php` file ([See the drupal.org documentation of this process here](https://drupal.org/node/17565)).
 
 Copying every line of `node.tpl.php` to `node--article.tpl.php` only to change a few lines makes the theme of a given Drupal site extremely WET ([Write Everything Twice](http://en.wikipedia.org/wiki/Don't_repeat_yourself#DRY_vs_WET_solutions)).
 What if instead of duplicating the entire node template file to a node-type specific name, I could make that node-type specific file contain only the overrides?
@@ -70,8 +70,8 @@ Addition two in `node.twig.html` is:
 
 ### WHERE does this code go?
 
-The complete example code which is a sub-theme of Bartik is here [in an alternate branch of the github repo of this blog you're reading](https://github.com/stevector/stevector.github.io/tree/example--twig-extends).
-To test it, git clone that branch into `/themes` of a Drupal 8 site and enable it.
+The complete example code, which is a sub-theme of Bartik, is here [in an alternate branch of the github repo of this blog you're reading](https://github.com/stevector/stevector.github.io/tree/example--twig-extends).
+To test the theme `git clone` that branch into `/themes` of a Drupal 8 site and enable it.
 Notice that the "parent" `node.twig.html` is in this sub-theme.
 By having a `node.twig.html` in the sub-theme, Drupal (and Twig) completely ignore the `node.twig.html` in Bartik and node module.
 That kind of overriding, where a template file in the theme completely supersedes Core, is the same as previous versions of Drupal.
@@ -94,5 +94,5 @@ Heavy use of the "extends" concept in Twig will start when developers start buil
 Drupal developers will bikeshed extensively on a rubric for when a block (or is it a codeblock?) should be completely empty in the parent template as I did with my `header_fields` block and Jen did with her `infobar` block.
 When should the parent template's block contain something as I did with my `content` block?
 Should these blocks be named with an underscore like `header_fields` or without like `infobar`?
-Is it too confusing for Drupal to add another concept for "overriding" a template? I have no "right" answers yet.
-I want to use this tool for real first and see what new pain points we get while solving the exiting ones.
+Is it too confusing for Drupal to add another concept for overriding a template? I have no "right" answers yet.
+I want to use this tool for real first and see what new pain points we get while solving the existing ones.
