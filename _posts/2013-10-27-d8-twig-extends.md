@@ -51,7 +51,7 @@ Heres one addition to `node.twig.html` in a copy Bartik's version:
 
 ```
 {% raw %}{# This empty block allows child templates to insert markup into this
-     place in the header without re-writing the entire template. #}
+   place in the header without re-writing the entire template. #}
 {% block header_fields %}
 {% endblock %}
 {% endraw %}
@@ -61,13 +61,12 @@ Addition two in `node.twig.html` is:
 
 ```
 {% raw %}{# By wrapping the content variables in a block, this template allows child
-     templates to insert markup into this spot without re-writing the entire
-     template. #}
+   templates to insert markup into this spot without re-writing the entire
+   template. #}
 {% block content %}
   {{ content }}
 {% endblock %}{% endraw %}
 ```
-
 
 ### WHERE does this code go?
 
