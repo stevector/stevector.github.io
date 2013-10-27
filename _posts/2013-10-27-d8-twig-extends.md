@@ -26,7 +26,7 @@ That's what Twig "extends" concept does!
 Here's an example `node--article.twig.html` that moves field_image.
 
 ```
-{% extends "themes/sub_bartik/templates/node.html.twig" %}
+{% raw %}{% extends "themes/sub_bartik/templates/node.html.twig" %}
 
 {# Override the header_fields block to put field_image there because this site
    needs it there. #}
@@ -40,6 +40,7 @@ Here's an example `node--article.twig.html` that moves field_image.
   {% hide(content.field_image) %}
   {{ content }}
 {% endblock %}
+{% endraw %}
 ```
 
 [Compare that to the amount of code in the parent template being overridden.](https://github.com/stevector/stevector.github.io/blob/example--twig-extends/templates/node.html.twig)
@@ -49,21 +50,22 @@ To make this kind of overriding possible, the parent template needs to declare w
 Heres one addition to `node.twig.html` in a copy Bartik's version:
 
 ```
-  {# This empty block allows child templates to insert markup into this
-     place in the header without re-writing the entire template. #}
-  {% block header_fields %}
-  {% endblock %}
+{% raw %}{# This empty block allows child templates to insert markup into this
+   place in the header without re-writing the entire template. #}
+{% block header_fields %}
+{% endblock %}
+{% endraw %}
 ```
 
-Addition two in `node.twig.html`
+Addition two in `node.twig.html` is:
 
 ```
-  {# By wrapping the content variables in a block, this template allows child
-     templates to insert markup into this spot without re-writing the entire
-     template. #}
-  {% block content %}
-    {{ content }}
-  {% endblock %}
+{% raw %}{# By wrapping the content variables in a block, this template allows child
+   templates to insert markup into this spot without re-writing the entire
+   template. #}
+{% block content %}
+  {{ content }}
+{% endblock %}{% endraw %}
 ```
 
 ### WHERE does this code go?
