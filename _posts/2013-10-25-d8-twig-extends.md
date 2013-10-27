@@ -3,27 +3,27 @@ layout: post
 title: Make your Drupal 8 theme easier to maintain with this one weird trick (Twig's "extends" concept)
 ---
 
-### WHAT is Twig's "extends" concept
+### WHAT is Twig's "extends" concept?
 
 Drupal 8 has a new templating system called [Twig](http://twig.sensiolabs.org/) that comes from the [Symfony](http://symfony.com/) world.
 I recommend learning about Twig and Drupal 8's use of it by watching a video of one of the many recent conference presentations on the topic like [this one from Drupalcon Portland](https://portland2013.drupal.org/session/using-twig-new-template-engine-drupal-8).
 Twig contains within it a different model for overriding templates that can be used in combination with Drupal's traditional naming-based template overrides.
-[Read Twig's own documentation of 'extends' here.](http://twig.sensiolabs.org/doc/tags/extends.html)
+[Read Twig's own documentation of 'extends' here](http://twig.sensiolabs.org/doc/tags/extends.html) to see how it allows child templates to be much simpler than their parents. Or just keep reading until the 'HOW' section of this post.
 
-### WHY is it helpful
+### WHY is it helpful?
 
 Last weekend when I was working on a personal Drupal project ([nerdologues.com](http://nerdologues.com)) and ran into a common theme development pain point.
-I wanted to print some fields in the header tag of my node template for only one node type.
+I wanted to print some fields separate from the rest of the `$content` variable for only one node type.
 In Drupal 7 (and prior versions) this process involves making a a complete copy of the `node.tpl.php` file ([See the drupal.org documentation of this process here](https://drupal.org/node/17565)).
 
-Copying every line of `node.tpl.php` to `node--article.tpl.php` only to change a few lines makes the theme of a given drupal site extremely WET ([Write Everything Twice](http://en.wikipedia.org/wiki/Don't_repeat_yourself#DRY_vs_WET_solutions)).
+Copying every line of `node.tpl.php` to `node--article.tpl.php` only to change a few lines makes the theme of a given Drupal site extremely WET ([Write Everything Twice](http://en.wikipedia.org/wiki/Don't_repeat_yourself#DRY_vs_WET_solutions)).
 What if instead of duplicating the entire node template file to a node-type specific name, I could make that node-type specific file contain only the overrides?
 
 That's what Twig 'extends' concept does!
 
-### HOW is it used
+### HOW is it used?
 
-Here's an example `node--article.twig.html` that moves field_image into the header tag of the node.
+Here's an example `node--article.twig.html` that moves field_image.
 
 <pre>
 {% extends "themes/sub_bartik/templates/node.html.twig" %}
@@ -42,11 +42,9 @@ Here's an example `node--article.twig.html` that moves field_image into the head
 {% endblock %}
 </pre>
 
-That is all that is needed!
+[Compare that to the amount of code in the parent template being overridden.](https://github.com/stevector/stevector.github.io/blob/example--twig-extends/templates/node.html.twig)
 
-Compare that to the amount of code in the parent template being overridden. LINK NEEDED.
-
-To make this kind of overriding possible, the parent template needs to declare which sections can be overridden. In this example I've declared two "blocks" (in Twig-speak, the Drupal community might start calling these "codeblocks" to reduce confusion with Drupal core's Block module) that designates which pieces of the template can replace.
+To make this kind of overriding possible, the parent template needs to declare which sections can be overridden. In this example I've declared two "blocks" (the Drupal community might start calling these pieces "codeblocks" to reduce confusion with Drupal core's Block module) that designates which pieces of the template can replace.
 
 Heres one addition to `node.twig.html` in a copy Bartik's version:
 
@@ -67,21 +65,30 @@ Addition two in `node.twig.html`
     {% endblock %}
 </pre>
 
-### WHERE does this code go
+### WHERE does this code go?
 
-You can see the the complete example code which is a sub-theme of Bartik here [in an alternate branch of the github repo of this blog you're reading](https://github.com/stevector/stevector.github.io/tree/twig-extends-example).
-To test it, git clone that branch into /themes of a Drupal 8 site and enable  Notice that again that the "parent" `node.twig.html` is in this sub-theme.
+You can see the the complete example code which is a sub-theme of Bartik here [in an alternate branch of the github repo of this blog you're reading](https://github.com/stevector/stevector.github.io/tree/example--twig-extends).
+To test it, git clone that branch into `/themes` of a Drupal 8 site and enable  Notice that the "parent" `node.twig.html` is in this sub-theme.
 By having a `node.twig.html` in the sub-theme, Drupal (and Twig) completely ignore the `node.twig.html` in Bartik and node module.
-That kind of overriding where a template file in the theme completely supersedes Core is the same as previous versions of Drupal.
+That kind of overriding, where a template file in the theme completely supersedes Core, is the same as previous versions of Drupal.
 
-### WHO should write these "blocks"
+### WHO should write these "blocks"?
 
 This example is illustrates how 'extends' can be used a site owner in a **site-specific theme**.
-I have shown this code around at [BADCamp](http://2013.badcamp.net/) this weekend and the reaction from [Carl Wiedemann](https://twitter.com/c4rl) and others has mainly been something like "Drupal Core shouldn't put these blocks in templates yet (or maybe ever) because we don't have enough experience with them."
+I have shown this code around at [BADCamp](http://2013.badcamp.net/) this weekend and the reaction from [Carl Wiedemann](https://twitter.com/c4rl) and other Twig-interested-developers has mainly been something like "Drupal Core shouldn't put these blocks in templates yet (or maybe ever) because we don't have enough experience with them."
 I agree.
 Drupal has a pattern of proving concepts in the contrib space and then moving those concepts into core.
 And even before making a contrib base theme using Twig blocks, someone has to use them on a real site.
 
-### When 
+### WHEN will developers start using "blocks"?
 
 Heavy use of the 'extends' concept in Twig will start when developers start building Drupal 8 sites and adding site-specific themes.
+Scott Reeves pointed out to me that Jen Lampton's experimental Twig base theme for Drupal 8 [used this concept already](https://github.com/jenlampton/twiggy/blob/master/templates/node.html.twig#L98).
+
+### WHAT is next?
+
+Drupal developers will bikeshed extensively on a rubric for when a block (or is it a codeblock?) should be completely empty in the parent template as I did with my `header_fields` block and Jen did with her `infobar` block.
+When should the parent template's block contain something as I did with my `content` block?
+Should these blocks be named with an underscore like `header_fields` or without like `infobar`?
+Is it too confusing for Drupal to add another concept for "overriding" a template? I have no "right" answers yet.
+I want to use this tool for real first.
