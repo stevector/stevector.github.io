@@ -78,7 +78,7 @@ That kind of overriding, where a template file in the theme completely supersede
 
 ### WHO should write these "blocks"?
 
-This example is illustrates how "extends" can be used a site owner in a **site-specific theme**.
+This example illustrates how "extends" can be used by a site owner in a **site-specific theme**.
 I have shown this code around at [BADCamp](http://2013.badcamp.net/) this weekend and the reaction from [Carl Wiedemann](https://twitter.com/c4rl) and other Twig-interested-developers has mainly been something like "Drupal Core shouldn't put these blocks in templates yet (or maybe ever) because we don't have enough experience with them."
 I agree.
 Drupal has a pattern of proving concepts in the contrib space and then moving those concepts into core.
