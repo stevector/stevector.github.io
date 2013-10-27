@@ -71,7 +71,8 @@ Addition two in `node.twig.html` is:
 ### WHERE does this code go?
 
 The complete example code which is a sub-theme of Bartik is here [in an alternate branch of the github repo of this blog you're reading](https://github.com/stevector/stevector.github.io/tree/example--twig-extends).
-To test it, git clone that branch into `/themes` of a Drupal 8 site and enable  Notice that the "parent" `node.twig.html` is in this sub-theme.
+To test it, git clone that branch into `/themes` of a Drupal 8 site and enable it.
+Notice that the "parent" `node.twig.html` is in this sub-theme.
 By having a `node.twig.html` in the sub-theme, Drupal (and Twig) completely ignore the `node.twig.html` in Bartik and node module.
 That kind of overriding, where a template file in the theme completely supersedes Core, is the same as previous versions of Drupal.
 
