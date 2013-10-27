@@ -83,7 +83,7 @@ And even before making a contrib base theme using Twig blocks, someone has to us
 ### WHEN will developers start using "blocks"?
 
 Heavy use of the "extends" concept in Twig will start when developers start building Drupal 8 sites and adding site-specific themes.
-Scott Reeves pointed out to me that Jen Lampton's experimental Twig base theme for Drupal 8 [used this concept already](https://github.com/jenlampton/twiggy/blob/master/templates/node.html.twig#L98).
+[Scott Reeves](https://twitter.com/Cottser) pointed out to me that [Jen Lampton's](https://twitter.com/jenlampton) experimental Twig base theme for Drupal 8 [used this concept already](https://github.com/jenlampton/twiggy/blob/master/templates/node.html.twig#L98). I'm glad I'm not the only Drupal developer who wants to use this functionality.
 
 ### WHAT is next?
 
@@ -91,4 +91,4 @@ Drupal developers will bikeshed extensively on a rubric for when a block (or is 
 When should the parent template's block contain something as I did with my `content` block?
 Should these blocks be named with an underscore like `header_fields` or without like `infobar`?
 Is it too confusing for Drupal to add another concept for "overriding" a template? I have no "right" answers yet.
-I want to use this tool for real first.
+I want to use this tool for real first and see what new pain points we get while solving the exiting ones.
