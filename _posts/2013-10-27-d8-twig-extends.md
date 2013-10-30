@@ -23,7 +23,7 @@ That's what Twig "extends" concept does!
 
 ### HOW is it used?
 
-Here's an example `node--article.twig.html` that moves field_image.
+Here's an example `node--article.html.twig` that moves field_image.
 
 <pre>
 {% raw %}{% extends "themes/sub_bartik/templates/node.html.twig" %}
@@ -47,7 +47,7 @@ Here's an example `node--article.twig.html` that moves field_image.
 
 To make this kind of overriding possible, the parent template needs to declare which sections can be overridden. In this example I've declared two "blocks" (the Drupal community might start calling these pieces "codeblocks" to reduce confusion with Drupal core's Block module) that designates which pieces of the template can be replaced.
 
-Here's one addition to `node.twig.html` in a copy of Bartik's version:
+Here's one addition to `node.html.twig` in a copy of Bartik's version:
 
 <pre>
 {% raw %}{# This empty block allows child templates to insert markup into this
@@ -57,7 +57,7 @@ Here's one addition to `node.twig.html` in a copy of Bartik's version:
 {% endraw %}
 </pre>
 
-Addition two in `node.twig.html` is:
+Addition two in `node.html.twig` is:
 
 <pre>
 {% raw %}{# By wrapping the content variables in a block, this template allows child
@@ -72,8 +72,8 @@ Addition two in `node.twig.html` is:
 
 The complete example code, which is a sub-theme of Bartik, is here [in an alternate branch of the github repo of this blog you're reading](https://github.com/stevector/stevector.github.io/tree/example--twig-extends).
 To test the theme `git clone` that branch into `/themes` of a Drupal 8 site and enable it.
-Notice that the "parent" `node.twig.html` is in this sub-theme.
-By having a `node.twig.html` in the sub-theme, Drupal (and Twig) completely ignore the `node.twig.html` in Bartik and node module.
+Notice that the "parent" `node.html.twig` is in this sub-theme.
+By having a `node.html.twig` in the sub-theme, Drupal (and Twig) completely ignore the `node.html.twig` in Bartik and node module.
 That kind of overriding, where a template file in the theme completely supersedes Core, is the same as previous versions of Drupal.
 
 ### WHO should write these "blocks"?
