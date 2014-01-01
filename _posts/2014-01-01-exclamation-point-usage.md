@@ -30,8 +30,8 @@ Mostly my girlfriend. We've been together since late October of 2012. I suspect 
 First, I [exported my Google Voice history with Google Takeout](http://techcrunch.com/2011/09/06/google-now-lets-you-export-google-voice-data/).
 Then I wrote a couple of PHP classes to parse the files in arrays that could be manipulated more easily.
 Those classes then went into a [Symfony](http://symfony.com/) bundle that used [Altamira](https://github.com/Malwarebytes/Altamira) to display the data through [jqPlot](http://www.jqplot.com/).
-This code was the first time I wrote a Symfony bundle or app.
 I've got [an open Pull Request against my blog](https://github.com/stevector/stevector.github.io/pull/9) with an in-progress post that has more details on how the code works.
+This code was the first time I wrote a Symfony bundle or app and it shows.
 
 ### Where can the work be checked?
 
