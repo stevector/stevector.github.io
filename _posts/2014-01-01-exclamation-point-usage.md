@@ -24,7 +24,7 @@ So I downloaded my full Google Voice history, parsed it and graphed what I found
 
 Mostly my girlfriend. We've been together since late October of 2012.
 I suspect her frequent exclamation usage has influenced me.
-Maybe I'll refactor my code a little to separate out the percentage of text to her that get exclamation points as compared to everybody else.
+Maybe I'll refactor my code a little to separate out the percentage of text messages sent to her that get exclamation points as compared to everybody else.
 I should also note that not every text conversation I have runs through Google Voice.
 While the vast majority do, some friends and family still text me directly on my cell number.
 
@@ -35,7 +35,7 @@ Unlike French, with its [Académie française](http://en.wikipedia.org/wiki/Acad
 [That's not going to change](http://www.economist.com/blogs/johnson/2010/06/english_academy).
 In English, dictionary and style guide publishers chase free publicity by announcing newly added words and [words of the year](http://artsbeat.blogs.nytimes.com/2013/11/19/selfie-trumps-twerk-as-oxford-dictionaries-word-of-the-year/?_r=0).
 The ease with which linguistic trends can now be identified will only speed up this process.
-[In 2013 literally stopped meaning literally](http://www.prdaily.com/Main/Articles/15033.aspx#) and soon will we literally be able to pin point when a meaning shifts.
+[In 2013 literally stopped meaning literally](http://www.prdaily.com/Main/Articles/15033.aspx#) and soon will we literally be able to pinpoint when a meaning shifts.
 For the editor who wants to rewrite the textbook meaning of exclamation points, the evidence is mounting.
 
 ### HOW did I do that?
@@ -44,9 +44,8 @@ First, I [exported my Google Voice history with Google Takeout](http://techcrunc
 Then I wrote a couple of PHP classes to parse the files in arrays that could be manipulated more easily.
 Those classes then went into a [Symfony](http://symfony.com/) bundle that used [Altamira](https://github.com/Malwarebytes/Altamira) to display the data through [jqPlot](http://www.jqplot.com/).
 I've got [an open pull request against my blog](https://github.com/stevector/stevector.github.io/pull/9) with an in-progress post that has more details on how the code works.
-This code was the first time I wrote a Symfony bundle or app and it shows.
-There's plenty of refactoring to be done.
-Pull requests welcome.
+This code was the first time I wrote a Symfony bundle or app so there's plenty of refactoring to be done.
+Pull requests and pedantry are welcome.
 
 ### WHERE can the work be checked?
 
