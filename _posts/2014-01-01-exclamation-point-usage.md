@@ -1,5 +1,6 @@
 --- 
 layout: post
+og_image: "exclamation_point_usage_graph.jpg"
 title: My skyrocketing exclamation point usage!
 ---
 
