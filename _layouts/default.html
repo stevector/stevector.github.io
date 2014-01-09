@@ -39,7 +39,31 @@
   <body lang="en">
     <div id="page-wrapper">
       <div id="page">
+
+        <header class="page-header">
+          <h1><a href="/">{{ site.title }}</a></h1>
+          <p>You're reading the blog of Steve Persch. This is where I write about Drupal, Jekyll, and anything else that comes to mind. I also happen to do improv and sketch comedy around Chicago. Find out when and where over at <a href="http://stevepersch.com">stevepersch.com</a>.
+          </p>
+        </header>
+
         {{ content }}
+
+        <footer>
+          <header>
+          <h2>
+          Recent Posts
+          </h2>
+          </header>
+          <ul id="recent-posts">
+          {% for post in site.posts offset:0 limit:20 %}
+            <li>
+              <span>{{ post.date | date_to_string }} - </span>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+          {% endfor %}
+          </ul>
+        </footer>
+
       </div>
     </div>
 
