@@ -7,7 +7,7 @@ title: I graphed my skyrocketing exclamation point usage!
 
 ### WHAT is the deal?
 
-I parsed over four years of my Google Voice data to look for exclamation points in my sent messages. This graph shows what I found.
+I parsed over three years of my Google Voice data to look for exclamation points in my sent messages. This graph shows what I found.
 
 
 <iframe  src="/assets/post_specific/2014/01/google_voice_exclamation/chart.htm" width="700px" frameborder="0"  height="410px"></iframe>
