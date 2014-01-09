@@ -16,7 +16,7 @@ I had chatted with friends about exclamation points’ omnipresence.
 And then [Ben Crair](https://twitter.com/bencrair) wrote [a story in The New Republic](http://www.newrepublic.com/article/115726/period-our-simplest-punctuation-mark-has-become-sign-anger) that brought some more high profile ancedata about exclamation points as “sincerity markers.”
 
 After all that converation I figured that this question was entirely answerable.
-So I downloaded my full Google Voice history and parsed it.
+So I downloaded my full Google Voice history, parsed it and graphed what I found.
 
 ### WHO was I texting?
 
@@ -24,16 +24,17 @@ Mostly my girlfriend. We've been together since late October of 2012.
 I suspect her frequent exclamation usage has influenced me.
 Maybe I'll refactor my code a little to separate out the percentage of text to her that get exclamation points as compared to everybody else.
 
-### What does it matter?
+### WHAT does it matter?
 
 The English language has a defacto standard of being controlled by its users.
-Unlike French, which is controlled by a central authority, English is driven by ordinary people.
-And dictionary and style guide publishers are agree to grab free publicity by annoucing which new works they've recognized in a given year.
+Unlike French, with its [Académie française](http://en.wikipedia.org/wiki/Acad%C3%A9mie_fran%C3%A7aise), English is driven by ordinary people.
+[That's not going to change](http://www.economist.com/blogs/johnson/2010/06/english_academy).
+In English, dictionary and style guide publishers chase free publicity by annoucing newly added words and [words of the year](http://artsbeat.blogs.nytimes.com/2013/11/19/selfie-trumps-twerk-as-oxford-dictionaries-word-of-the-year/?_r=0).
 The ease with which lingustic trends can now be identified will only speed up this process.
-Sure [dictionary xyz] recognized in 2013 that literally stopped meaning literally and soon will we literally be able to pin point when a meaning shifts.
-And for the editor who wants to rewrite the textbook meaning of exclamation points, the evidence is mounting.
+[In 2013 literally stopped meaning literally](http://www.prdaily.com/Main/Articles/15033.aspx#) and soon will we literally be able to pin point when a meaning shifts.
+For the editor who wants to rewrite the textbook meaning of exclamation points, the evidence is mounting.
 
-### How did I do that?
+### HOW did I do that?
 
 First, I [exported my Google Voice history with Google Takeout](http://techcrunch.com/2011/09/06/google-now-lets-you-export-google-voice-data/).
 Then I wrote a couple of PHP classes to parse the files in arrays that could be manipulated more easily.
