@@ -26,6 +26,8 @@ So I downloaded my full Google Voice history, parsed it and graphed what I found
 Mostly my girlfriend. We've been together since late October of 2012.
 I suspect her frequent exclamation usage has influenced me.
 Maybe I'll refactor my code a little to separate out the percentage of text to her that get exclamation points as compared to everybody else.
+I should also note that not every text conversation I have runs through Google Voice.
+While the vast majority do, some friends and family still text me directly on my cell number.
 
 ### WHAT does it matter?
 
