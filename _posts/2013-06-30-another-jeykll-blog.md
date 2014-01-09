@@ -2,6 +2,7 @@
 layout: post
 title: Another Jekyll blog
 main-image: "all_the_things.jpg"
+og_image: "all_the_things.jpg"
 image-attributes:
 
 ---
