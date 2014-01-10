@@ -1,6 +1,7 @@
 --- 
 layout: post
 og_image: "exclamation_point_usage_graph.jpg"
+meta_description: I parsed over three years of my Google Voice data to look for exclamation points in my sent messages. This graph shows what I found.
 title: I graphed my skyrocketing exclamation point usage!
 ---
 
